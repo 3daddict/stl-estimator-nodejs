@@ -1,4 +1,34 @@
-// Main Stylesheet
+//Globals
+h1, h2, h3, h4, h5, h6 {
+
+}
+
+p {
+
+}
+
+// Index Page
+.header {
+  .nav {
+
+
+    @media all and (max-width: 768px) {
+
+    }
+  }
+}
+
+.footer {
+
+  @media all and (max-width: 768px) {
+
+  }
+}
+
+
+
+// ****************************************
+// Contributuers Page
 .contributors-container {
   .box-item {
     position: relative;
@@ -16,9 +46,7 @@
     white-space: nowrap;
   }
 
-  @media (min-width: 768px) {
-    .box-item {
-      width: calc(50% - 20px);
-    }
+  @media (max-width: 768px) {
+
   }
 }

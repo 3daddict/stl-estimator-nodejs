@@ -13,10 +13,4 @@
   overflow-x: hidden;
   white-space: nowrap;
 }
-
-@media (min-width: 768px) {
-  .contributors-container .box-item {
-    width: calc(50% - 20px);
-  }
-}
 /*# sourceMappingURL=styles.css.map */
