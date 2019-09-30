@@ -1,4 +1,4 @@
-# STL Estimator - Hackathon 2019
+# STL Estimator - HacktoberFest 2019
 [![buddy pipeline](https://app.buddy.works/3daddict/stl-estimator-nodejs/pipelines/pipeline/213288/badge.svg?token=b8c306937eeaca3ed8524eff5a4783b980a818bf1565b619716f9fe4505bec82 "buddy pipeline")](https://app.buddy.works/3daddict/stl-estimator-nodejs/pipelines/pipeline/213288)
 
 The goal of this project is to create an online STL file that users can upload a 3D Model (STL format binary or ascii) to get stats of their 3D Models. An example would be the volume of the model or the bouding box (L x W x H). This is commonly used for 3D Printing and depending on the level of interest we can accomplish some pretty cool things with this project. Things like Cost Estimation, Model Renderings, Saving Projects and Procssing G-Code files!
