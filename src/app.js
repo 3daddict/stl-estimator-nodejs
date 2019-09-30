@@ -35,6 +35,12 @@ app.get('/contributors', (req, res) => {
     });
 });
 
+app.get('/style-guide', (req, res) => {
+    res.render('style-guide', {
+        title: 'STL Estimator Style'
+    });
+});
+
 app.listen(port, () => {
     console.log('Server listening on port ' + port);
 });
