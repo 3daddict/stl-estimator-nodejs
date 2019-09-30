@@ -1,0 +1,22 @@
+.contributors-container .box-item {
+  position: relative;
+  display: block;
+  color: #444;
+  font-weight: 600;
+  width: 100%;
+  cursor: pointer;
+  border-radius: 0.4rem;
+  padding: 15px 8px 15px 70px;
+  margin: 10px;
+  font-size: 1rem;
+  text-overflow: ellipsis;
+  overflow-x: hidden;
+  white-space: nowrap;
+}
+
+@media (min-width: 768px) {
+  .contributors-container .box-item {
+    width: calc(50% - 20px);
+  }
+}
+/*# sourceMappingURL=styles.css.map */

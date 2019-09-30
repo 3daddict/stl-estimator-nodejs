@@ -1,0 +1,24 @@
+# Project #
+###################
+node_modules
+dist
+upload
+deploy.log
+config/shopify.yml
+npm-debug.log
+.env
+.env.*
+*-lock.json
+
+# OS generated files #
+######################
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+_site
+/.idea
+/.vscode
