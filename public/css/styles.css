@@ -1,16 +1,28 @@
-.contributors-container .box-item {
-  position: relative;
+.contributors__container {
+  display: flex;
+  justify-content: center; }
+
+.contributors__list {
+  display: flex;
+  flex-flow: wrap;
+  justify-content: center; }
+  @media (min-width: 1200px) {
+    .contributors__list {
+      max-width: 1200px; } }
+
+.contributors__person {
+  padding: 1rem; }
+
+.contributors__image {
+  max-width: 150px;
+  border-radius: 50%;
+  border: 2px solid #ee6e73; }
+  @media (min-width: 768px) {
+    .contributors__image {
+      max-width: 200px; } }
+
+.contributors__link {
   display: block;
-  color: #444;
-  font-weight: 600;
-  width: 100%;
-  cursor: pointer;
-  border-radius: 0.4rem;
-  padding: 15px 8px 15px 70px;
-  margin: 10px;
-  font-size: 1rem;
-  text-overflow: ellipsis;
-  overflow-x: hidden;
-  white-space: nowrap;
-}
-/*# sourceMappingURL=styles.css.map */
+  text-align: center; }
+  .contributors__link:hover {
+    text-decoration: underline; }
