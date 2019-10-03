@@ -25,28 +25,49 @@ p {
   }
 }
 
-
+// Variables (will probably be updated when style guide is complete)
+$primary-color: #ee6e73;
 
 // ****************************************
-// Contributuers Page
-.contributors-container {
-  .box-item {
-    position: relative;
-    display: block;
-    color: #444;
-    font-weight: 600;
-    width: 100%;
-    cursor: pointer;
-    border-radius: 0.4rem;
-    padding: 15px 8px 15px 70px;
-    margin: 10px;
-    font-size: 1rem;
-    text-overflow: ellipsis;
-    overflow-x: hidden;
-    white-space: nowrap;
+// Contributors Page
+
+.contributors {
+  &__container {
+    display: flex;
+    justify-content: center;
   }
 
-  @media (max-width: 768px) {
+  &__list {
+    display: flex;
+    flex-flow: wrap;
+    justify-content: center;
 
+    // To prevent too many in a row across
+    @media (min-width: 1200px) {
+      max-width: 1200px;
+    }
+  }
+
+  &__person {
+    padding: 1rem;
+  }
+  
+  &__image {
+    max-width: 150px;
+    border-radius: 50%;
+    border: 2px solid $primary-color;
+
+    @media (min-width: 768px) {
+      max-width: 200px;
+    }
+  }
+
+  &__link {
+    display: block;
+    text-align: center;
+
+    &:hover {
+      text-decoration: underline;
+    }
   }
 }
