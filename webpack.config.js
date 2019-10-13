@@ -1,5 +1,6 @@
 const path = require("path");
 const webpack = require("webpack");
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
 module.exports = {
@@ -13,6 +14,13 @@ module.exports = {
   target: 'web',
   module: {
     rules: [
+      {
+        test: /\.hbs$/,
+        loader: "handlebars-loader",
+        options: {
+          partialDirs: [path.resolve(__dirname, './templates/partials')],
+        }
+      },
       {
         test: /\.js$/,
         exclude: /(node_modules)/,
@@ -28,9 +36,13 @@ module.exports = {
     ]
   },
   resolve: {
-    extensions: ["*", ".js", ".css"]
+    extensions: ["*", ".js", ".css", ".hbs"]
   },
   plugins: [
+    new HtmlWebpackPlugin({
+      template: path.resolve(__dirname, './templates/views/index.hbs'),
+      filename: "./index.html",
+    }),
     // clean dist folder
     new CleanWebpackPlugin({
       'verbose': true // write logs to console
