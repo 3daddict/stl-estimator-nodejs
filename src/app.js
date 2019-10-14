@@ -11,9 +11,8 @@ const publicDirPath = path.join(__dirname, '../dist');
 //express static route to main dir
 app.use(express.static(publicDirPath));
 
-app.get('', (req, res) => {
-    res.sendFile(path.resolve(publicDirPath, 'index.html'))
-});
+// Redirect all traffic to index
+app.use((req, res) => res.sendFile(path.resolve(publicDirPath, 'index.html')));
 
 app.listen(port, () => {
     console.log('Server listening on port ' + port);

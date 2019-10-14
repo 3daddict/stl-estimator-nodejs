@@ -40,8 +40,8 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: path.resolve(__dirname, './templates/views/index.hbs'),
-      filename: "./index.html",
+      template: path.resolve(__dirname, './public/index.html'),
+      filename: "./index.html"
     }),
     // clean dist folder
     new CleanWebpackPlugin({
