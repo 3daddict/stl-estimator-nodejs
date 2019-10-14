@@ -17,7 +17,8 @@
     "express": "^4.17.1",
     "materialize-css": "^1.0.0-rc.2",
     "node-sass": "^4.12.0",
-    "request": "^2.88.0"
+    "request": "^2.88.0",
+    "vanilla-router": "^1.2.7"
   },
   "devDependencies": {
     "@babel/core": "^7.6.2",
